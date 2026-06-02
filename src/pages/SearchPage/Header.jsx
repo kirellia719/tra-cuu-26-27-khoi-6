@@ -32,7 +32,7 @@ export default function Header() {
                     {/* Text */}
                     <div>
                         <h1 className="text-lg md:text-2xl font-bold uppercase leading-tight text-blue-900">
-                            Tra cứu điểm
+                            Tra cứu điểm khối 6
                         </h1>
 
                         <p className="text-slate-700 text-xs md:text-base mt-1">

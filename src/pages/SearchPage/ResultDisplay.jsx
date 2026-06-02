@@ -46,7 +46,7 @@ export default function ResultDisplay({ result }) {
     // Render Kết quả
     const renderResultRow = () => {
         return (
-            <div className="flex flex-col sm:flex-row p-2 sm:pb-3 sm:items-center">
+            <div className="flex sm:flex-row  p-2 sm:pb-3 items-center justify-between">
                 <span className="sm:w-1/3 text-slate-500 text-xs md:text-sm">
                     Kết quả:
                 </span>
