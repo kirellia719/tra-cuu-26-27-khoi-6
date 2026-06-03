@@ -42,9 +42,6 @@ export default function SearchPage() {
     }
   };
 
-  console.log(result);
-
-
   return (
     <div className="min-h-screen flex flex-col font-sans" id="app-container">
       <Header />
