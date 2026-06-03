@@ -200,17 +200,17 @@ export default function ResultDisplay({ result }) {
                 </div>
 
             </div>
-            <div className="mt-5 bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden text-slate-700">
-                <div className=" px-4 md:px-8 py-2 md:py-4 ">
-                    <h2 className="text-base md:text-lg font-bold text-slate-800 mb-2 md:mb-4 flex items-center gap-2">
-                        <span className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center text-white shadow-md shadow-blue-600/20">
-                            <NotebookPen size={16} />
-                        </span>
-                        Phúc khảo
-                    </h2>
-                    <div className="text-slate-500 text-sm text-justify w-full">
+            <div className="mt-5 bg-white rounded-xl shadow-lg border border-slate-200 overflow-hidden">
+                {/* HEADER */}
+                <div className="border-b border-slate-200 px-4 md:px-8 py-2 md:py-4 flex flex-col sm:flex-row justify-between items-center gap-1 md:gap-2">
+                    <span className="flex justify-between items-center gap-2 text-slate-800 uppercase tracking-widest text-[14px] md:text-sm font-bold text-center">
+                        Phúc khảo <NotebookPen size={16} />
+                    </span>
+                </div>
+                <div className="px-4 py-2 md:px-8 md:py-4 text-justify">
+                    <span className="text-slate-700 text-sm">
                         Thời gian nhận đơn phúc khảo đến trước <strong className="text-black">11:00 ngày 04/06/2026</strong>, tại phòng <strong className="text-black"> GIÁO VỤ</strong> trường THCS và THPT Tây Nguyên.
-                    </div>
+                    </span>
                 </div>
             </div>
         </motion.div>
