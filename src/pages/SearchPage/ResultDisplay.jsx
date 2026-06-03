@@ -7,7 +7,7 @@ export default function ResultDisplay({ result }) {
 
     const [showModal, setShowModal] = useState(true);
 
-    const currentDate = new Date(result.updatedAt || new Date()).toLocaleDateString("vi-VN", {
+    const currentDate = new Date(new Date()).toLocaleDateString("vi-VN", {
         day: "2-digit",
         month: "2-digit",
         year: "numeric",
@@ -163,7 +163,7 @@ export default function ResultDisplay({ result }) {
                                     </tr>
 
                                     <tr className="border-b border-slate-50 bg-slate-50/50">
-                                        <td className="py-2 px-3 sm:px-4 text-xs md:text-base">Ngữ Văn</td>
+                                        <td className="py-2 px-3 sm:px-4 text-xs md:text-base">Tiếng Việt</td>
                                         <td className="py-2 px-3 sm:px-4 text-right">
                                             {renderScore(scores.literature, scores.literatureReview)}
                                         </td>

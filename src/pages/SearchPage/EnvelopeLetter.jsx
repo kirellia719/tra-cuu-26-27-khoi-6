@@ -1,5 +1,5 @@
 import { useRef, } from 'react';
-import { ClockCheck, Heart, PartyPopper } from 'lucide-react';
+import { Heart, PartyPopper } from 'lucide-react';
 
 const candidataMock = {
     id: '123456',
@@ -76,7 +76,7 @@ export default function EnvelopeLetter({ candidate = candidataMock }) {
                         </div>
                         <div className="flex justify-between mt-1 mb-2 text-base text-slate-700">
                             <span>Từ: </span>
-                            <span className="font-medium text-[#0d4c92]">14h00 ngày 03/06/2026</span>
+                            <span className="font-medium text-[#0d4c92]">07h30 ngày 04/06/2026</span>
                         </div>
                         <div className="flex justify-between text-base text-slate-700">
                             <span>Đến: </span>

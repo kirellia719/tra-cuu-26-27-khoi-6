@@ -140,21 +140,6 @@ const CandidateTable = ({ data, isLoading, onRefresh }) => {
       ),
     },
     {
-      title: "Điểm chuẩn",
-      dataIndex: "cutoff",
-      key: "cutoff",
-      align: "center",
-      width: 120,
-      render: (cutoff) =>
-        cutoff != null ? (
-          <span className="font-bold text-indigo-600">
-            {cutoff}
-          </span>
-        ) : (
-          <span className="text-slate-300">---</span>
-        ),
-    },
-    {
       title: <span className="whitespace-nowrap">Trạng thái</span>,
       dataIndex: 'isPass',
       key: 'isPass',
