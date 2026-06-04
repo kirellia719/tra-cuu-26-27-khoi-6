@@ -66,9 +66,7 @@ export default function EnvelopeLetter({ candidate = candidataMock }) {
                 </div>
 
                 {/* The welcome text as requested by user */}
-                <div
-                    className="text-slate-800 text-base leading-relaxed max-w-2xl mx-auto px-2 tracking-normal"
-                >
+                <div className="text-slate-800 text-base leading-relaxed max-w-2xl mx-auto px-2 tracking-normal"                >
                     <div>
                         <div className="text-center font-bold text-slate-700 mb-3">
                             {/* <ClockCheck className="inline-block w-5 h-5 text-[#0d4c92] mb-1 mr-1" /> */}
@@ -82,6 +80,18 @@ export default function EnvelopeLetter({ candidate = candidataMock }) {
                             <span>Đến: </span>
                             <span className="font-medium text-[#0d4c92]">16h00 ngày 07/06/2026</span>
                         </div>
+                    </div>
+                    <div className=" pt-3 text-left">
+                        <div className="font-bold text-slate-700 mb-2">
+                            📁 Hồ sơ nhập học gồm:
+                        </div>
+
+                        <ul className="space-y-2 text-slate-700 text-sm px-4">
+                            <li>• Học bạ bản gốc</li>
+                            <li>• Giấy khai sinh (bản sao)</li>
+                            <li>• Căn cước công dân (photo)</li>
+                            <li>• <strong>Giấy khám sức khỏe (có xác nhận của cơ sở y tế)</strong></li>
+                        </ul>
                     </div>
                 </div>
             </div>
