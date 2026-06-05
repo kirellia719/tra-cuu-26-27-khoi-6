@@ -138,13 +138,23 @@ export default function ResultDisplay({ result }) {
                     </div>
 
                     {/* SCORE */}
-                    <div className="mt-2 md:mt-0 p-4 rounded-lg border border-slate-200">
-                        <h2 className="text-base md:text-lg font-bold text-slate-800 mb-3 md:mb-6 flex items-center gap-2">
-                            <span className="w-8 h-8 bg-[#2ca75f] rounded-full flex items-center justify-center text-white shadow-md shadow-blue-600/20">
-                                <ChartColumn size={16} />
-                            </span>
-                            Bảng điểm
-                        </h2>
+                    <div className="mt-2 md:mt-0 p-4 rounded-lg border border-slate-200 ">
+                        <div className="flex items-center justify-between mb-3 md:mb-6">
+                            <h2 className="text-base md:text-lg font-bold text-slate-800  flex items-center gap-2">
+                                <span className="w-8 h-8 bg-[#2ca75f] rounded-full flex items-center justify-center text-white shadow-md shadow-blue-600/20">
+                                    <ChartColumn size={16} />
+                                </span>
+                                Bảng điểm
+                            </h2>
+                            {
+                                (result.literatureReview || result.mathReview || result.englishReview) && (
+                                    <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold">
+                                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                                        Đã phúc khảo
+                                    </span>
+                                )
+                            }
+                        </div>
 
                         <div className="overflow-x-auto">
                             <table className="w-full text-left min-w-[240px]">
